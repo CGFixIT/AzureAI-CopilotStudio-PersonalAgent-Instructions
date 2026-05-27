@@ -14,6 +14,8 @@ License
 The MIT License applies only to:
   • /template.md
   • /examples/cloud-infra.md
+  • /examples/ps1CodingAgent.md
+  • /examples/yaragenerator.md
 
 All other files
 (including **veeam-specific** /examples )
