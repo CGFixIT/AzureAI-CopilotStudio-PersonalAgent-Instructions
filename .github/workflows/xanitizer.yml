@@ -24,6 +24,11 @@ jobs:
       security-events: write
       actions: read
 
+    # xanitizer-action@v1 uses Node.js 20; allow it until an updated version
+    # ships with Node.js 24 support (Node.js 24 became default on 2026-06-16)
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
