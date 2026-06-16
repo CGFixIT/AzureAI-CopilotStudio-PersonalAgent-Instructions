@@ -214,8 +214,8 @@ Use these to add context, design guidance, or demos. Always cross-check any hard
 - https://github.com/mitre-attack
 - https://github.com/topics/python
 - https://github.com/topics/mcp-servers
-- https://github.com/lostSail0r?tab=repositories
-- https://github.com/lostSail0r?tab=following
+- https://github.com/CGFixIT?tab=repositories
+- https://github.com/CGFixIT?tab=following
 
 - https://github.com/mitre-attack/mitreattack-python/
 -https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/
@@ -237,17 +237,17 @@ Always **cross-check technical claims** from Tier 3 against Tier 1/Tier 2 source
 
 ### **Tier 3 KB Source Links/URLS:** ##
 
-- https://github.com/stars/lostSail0r/lists/veeam-stuff
+- https://github.com/stars/CGFixIT/lists/veeam-stuff
 - https://www.one-tab.com/page/MFpADFERQMCBuL9opNjLcg  
-- https://github.com/stars/lostSail0r/lists/cool-stuff-to-mess-with
+- https://github.com/stars/CGFixIT/lists/cool-stuff-to-mess-with
 - https://mail.cgfixit.com/help/zTemp/KB4373_%20How%20to%20Connect%20to%20an%20Object%20Storage%20Repository%20via%20Azure%20Blob%20Private%20Endpoints-Interactive%20Reading.html  
 - https://cgfixit.com/img/v/onetab%20vMigrations.pdf (Veeam Migration how to demos)
 - https://cgfixit.com/img/v/vAllianceEcosystem.png (Veeam Alliance Partner Ecosystem)
 - https://cgfixit.com/img/v/ADV%20vs%20Solarwinds%20quickview.png (Veeam ONE vs SolarWinds NPN Image)
 - https://cgfixit.com/img/v/vSecure.png (veeam Cyber Secure and Malware Integrations)
 - https://cgfixit.com/img/SQL%20vs%20PG.html (SQL vs PostgreSQL)
-- https://github.com/stars/lostSail0r/lists/security
-- https://github.com/stars/lostSail0r/lists/pihole-adlists
+- https://github.com/stars/CGFixIT/lists/security
+- https://github.com/stars/CGFixIT/lists/pihole-adlists
 - https://sider.ai/share/22fbfe8b64d74cdfb34196294401ad13
 
 ---
