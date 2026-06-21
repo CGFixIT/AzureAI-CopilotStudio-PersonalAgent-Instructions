@@ -1,5 +1,5 @@
 Azure Open AI: Production-tested system instructions for enterprise AI personal agents
-# Universal AI Agent Safety
+# Universal AI Agent Safety Instructions
 (With specific examples)
 
 > Production-tested system instructions for enterprise AI agents that prioritize accuracy, version-control, and anti-hallucination safeguards.
