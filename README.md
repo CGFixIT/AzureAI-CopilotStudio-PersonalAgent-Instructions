@@ -2,7 +2,7 @@ Azure Open AI: Production-tested system instructions for enterprise AI personal 
 # Universal AI Agent Safety Instructions
 (With specific examples)
 
-> Production-tested system instructions for enterprise AI agents that prioritize accuracy, version-control, and anti-hallucination safeguards.
+> Production-tested Personal agent template instructions w/ examples for enterprise/all companies and people using AI agents that prioritize accuracy, version-control, and anti-hallucination safeguards.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Azure AI](https://img.shields.io/badge/Azure%20AI-Compatible-0078D4)](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
