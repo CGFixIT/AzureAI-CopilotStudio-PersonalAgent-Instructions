@@ -15,7 +15,7 @@ License
 The MIT License applies only to:
   • /template.md
   • /examples/cloud-infra.md
-  • /examples/ps1CodingAgent.md
+  • /examples/ps1AgentCoder.md
   • /examples/yaragenerator.md
 
 All other files
@@ -198,14 +198,16 @@ Most "prompt templates" are vague platitudes like "be helpful and accurate." Thi
 ## Repository Structure(Generic Template.md + examples folder 
 
 ```
-├── README.md               ← You are here
-├── TEMPLATE.md             ← The full system instructions template
+├── README.md                      ← You are here
+├── TEMPLATE.md                    ← The full system instructions template
 ├── examples/
-|   └── veeamGPT.MD         ← Fully customized example for a backup, security and data protection company
-│   └── cloud-infra.md      ← Fully customized example for a cloud infrastructure company
-│   └── ps1AgentCoder.md    ← Fully customized example for aPower shell Coding Agent
-│   └── yaragenerator.md    ← Fully customized example for a YARA rule generator and bash/batch integrator
-└── LICENSE                 ← MIT License
+│   ├── cloud-infra.md             ← Multi-cloud infrastructure (Azure, AWS, cloud-agnostic)
+│   ├── Network&SecurityAgent.md   ← Network & security engineering (Azure OpenAI o3 optimized)
+│   ├── ps1AgentCoder.md           ← PowerShell coding agent (PS 5.1 + 7+)
+│   ├── pythonAgentCoder.md        ← Python coding agent (3.12+)
+│   ├── veeamGPT.md                ← Backup & DR (Veeam — reference only, not MIT)
+│   └── yaragenerator.md           ← YARA rule generator & cross-platform integration
+└── LICENSE                        ← MIT License (scoped — see above)
 ```
 
 ---
@@ -240,6 +242,7 @@ AI agent instructions based on the [Universal AI Agent Safety Template](https://
 
 ## Version History
 
+- **v1.4** (Jun 2026): Added o3 Reasoning Protocol to TEMPLATE.md and all examples; added missing Escalation/Security sections; added CI workflows (placeholder-audit, markdown-lint, link-check); security hardening (Dependabot, CODEOWNERS, .gitattributes); fixed README structure and license filename drift
 - **v1.3** (May 2026): Added several new agent instructions under examples/
 - **v1.2** (Dec 2025): Added Azure "on your data" grounding rule, audit logging, normalized formatting
 - **v1.1** (Dec 2025): Added Tool & Data Access, Security & Privacy, ethical guardrails

@@ -1,0 +1,42 @@
+name: CG Placeholder Audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  placeholder-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Scan examples for unfilled placeholders
+        run: |
+          EXIT_CODE=0
+          for f in examples/*.md; do
+            # Match [UPPER_SNAKE_CASE] tokens (3+ chars) but skip known structural syntax
+            HITS=$(grep -noP '\[[A-Z][A-Z0-9_]{2,}\]' "$f" \
+              | grep -vP '\[Image:' \
+              | grep -vP '^\d+:\[Warning\]' \
+              | grep -vP '^\d+:\[Note\]' \
+              | grep -vP '^\d+:\[Troubleshooting\]' \
+              | grep -vP '^\d+:\[FinOps\]' \
+              | grep -vP '^\d+:\[Security\]' \
+              | grep -vP '^\d+:\[IaC\]' \
+              || true)
+            if [ -n "$HITS" ]; then
+              echo "::error file=$f::Unfilled placeholders found in $f"
+              echo "$HITS"
+              EXIT_CODE=1
+            fi
+          done
+          if [ "$EXIT_CODE" -eq 0 ]; then
+            echo "All examples clean — no unfilled placeholders."
+          fi
+          exit $EXIT_CODE

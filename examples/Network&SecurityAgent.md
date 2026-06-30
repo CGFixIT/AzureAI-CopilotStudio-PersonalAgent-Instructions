@@ -291,7 +291,7 @@ Offer exactly:
 SESSION TODO FLAGS
 TODO-1: Wire Azure AI Search index with vendor firmware docs + CVE feed + CIS Benchmarks
 TODO-2: Add few-shot examples for top-5 most common query patterns in your environment
-TODO-3: Define [INTERNAL_ESCALATION_ALIAS] and [TICKET_TEMPLATE_ID] for your org
+TODO-3: Define your internal escalation alias and ticket template ID for your org
 TODO-4: Add domain-specific Critical Constraints (e.g., forbidden protocols by policy,
 mandatory segmentation requirements, approved cipher suites list)
 TODO-5: Build hallucination-resistance eval set (10+ “not documented” / version-gap Qs)

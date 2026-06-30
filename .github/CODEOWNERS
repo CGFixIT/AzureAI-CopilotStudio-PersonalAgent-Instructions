@@ -1,0 +1,8 @@
+# Default owner for everything in the repo
+*                       @cgfixit
+
+# Template is the canonical source — changes need careful review
+TEMPLATE.md             @cgfixit
+
+# CI workflows and security config
+.github/                @cgfixit

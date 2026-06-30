@@ -90,9 +90,11 @@ for wf in "$ROOT"/.github/workflows/*.yml; do
 done
 echo ""
 echo "  Candidate additions:"
-echo "    - markdown-lint.yml (markdownlint-cli2 for prose quality)"
-echo "    - link-check.yml (lychee or markdown-link-check for dead URLs)"
-echo "    - placeholder-audit.yml (automated [PLACEHOLDER] scan on PRs)"
+candidates=0
+[ ! -f "$ROOT/.github/workflows/markdown-lint.yml" ] && echo "    - markdown-lint.yml (markdownlint-cli2 for prose quality)" && candidates=1
+[ ! -f "$ROOT/.github/workflows/link-check.yml" ] && echo "    - link-check.yml (lychee or markdown-link-check for dead URLs)" && candidates=1
+[ ! -f "$ROOT/.github/workflows/placeholder-audit.yml" ] && echo "    - placeholder-audit.yml (automated [PLACEHOLDER] scan on PRs)" && candidates=1
+[ "$candidates" -eq 0 ] && echo "    (all recommended workflows already exist)"
 echo ""
 
 # ── 6. Security hardening check ───────────────────────────────────

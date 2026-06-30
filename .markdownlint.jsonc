@@ -1,0 +1,12 @@
+// markdownlint configuration for a prompt-engineering documentation repo.
+// These files contain large system-prompt blocks with intentional formatting
+// patterns (inline images, nested code fences, long lines) that standard
+// markdown lint rules would flag incorrectly.
+{
+  "MD013": false,
+  "MD024": false,
+  "MD033": false,
+  "MD040": false,
+  "MD041": false,
+  "MD046": false
+}
